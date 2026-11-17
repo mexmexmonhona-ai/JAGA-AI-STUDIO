@@ -1,0 +1,23 @@
+﻿
+.ai-studio { padding: 28px; }
+.ai-heading { display:flex; align-items:center; gap:16px; margin-bottom:26px; }
+.ai-symbol { width:58px; height:58px; display:grid; place-items:center; border-radius:16px; color:#c084fc; background:#351b50; }
+.ai-heading h3 { margin:0 0 6px; }
+.ai-heading p, .ai-note { color:#9292ad; font-size:13px; }
+.ai-form { display:flex; flex-direction:column; gap:11px; max-width:850px; }
+.ai-form label { color:#c9c5dc; font-size:13px; font-weight:600; }
+.ai-form input, .ai-form textarea, .ai-form select, .ai-fields select {
+  width:100%; box-sizing:border-box; padding:13px 14px; border:1px solid #343044;
+  border-radius:9px; background:#191722; color:#fff; outline:none; font:inherit;
+}
+.ai-form textarea { resize:vertical; }
+.ai-fields { display:grid; grid-template-columns:1fr 1fr; gap:15px; }
+.ai-fields > div { display:flex; flex-direction:column; gap:10px; }
+.ai-generate { align-self:flex-start; margin-top:10px; }
+.ai-result { margin-top:28px; padding:20px; border:1px solid #493064; border-radius:13px; background:#191522; }
+.ai-result pre { white-space:pre-wrap; overflow-wrap:anywhere; color:#e8e4f3; font:14px/1.7 inherit; }
+.ai-error { margin-top:18px; padding:14px; border:1px solid #743b4c; border-radius:9px; color:#ff9cac; }
+.ai-note { margin-top:20px; }
+.ai-spin { animation: ai-spin 1s linear infinite; }
+@keyframes ai-spin { to { transform:rotate(360deg); } }
+@media(max-width:700px) { .ai-fields { grid-template-columns:1fr; } .ai-studio { padding:17px; } }
